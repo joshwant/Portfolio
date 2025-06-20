@@ -26,7 +26,7 @@ export default function Projects({ projects }) {
     <section className="min-h-screen py-20 bg-gray-100" id="projects">
       <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
 
-      <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-8 max-w-7xl mx-auto">
         {/* Project List */}
         <div className="flex flex-col gap-4 w-full md:w-1/3">
           {projects.map((project) => (
@@ -47,16 +47,16 @@ export default function Projects({ projects }) {
         </div>
 
         {/* Project Details */}
-        <div className="w-full md:w-2/3 bg-white rounded-xl shadow-lg p-8 flex flex-col">
+        <div className="w-full md:w-5/6 bg-white rounded-xl shadow-lg p-8 flex flex-col">
           <h3 className="text-3xl font-bold mb-2">{selectedProject.title}</h3>
           <p className="text-gray-600 mb-6 italic">{selectedProject.shortDescription}</p>
 
           {/* Carousel */}
-            <div className="relative mb-6 w-full max-w-full overflow-hidden rounded-lg shadow-md mx-auto">
+            <div className="relative mb-6 w-full max-w-[800px] mx-auto aspect-video overflow-hidden rounded-lg shadow-md">
             <img
             src={selectedProject.images[currentImageIndex]}
             alt={`${selectedProject.title} screenshot ${currentImageIndex + 1}`}
-            className="w-full h-auto rounded-lg"
+            className="w-full h-full object-contain"
             />
 
             {/* Prev Button */}
