@@ -3,19 +3,22 @@ import Hero from "./Hero";
 import StickyNav from "./StickyNav";
 import Projects from "./Projects";
 
+import posterImage from "./assets/prepit/poster.jpg";
+import homepageImage from "./assets/prepit/homepage.png";
+
 const projects = [
   {
     id: 1,
-    title: "Project 1",
-    shortDescription: "Short description of project 1",
+    title: "PrepIt",
+    shortDescription: "AI-Powered Meal Planning and Price Comparison Mobile App.",
     images: [
-      "https://picsum.photos/200/100",
-      "https://picsum.photos/200/300?random=1",
+      posterImage,
+      homepageImage,
     ],
     description:
-      "This is a bigger, detailed description of project 1. It explains goals, challenges, and what you built.",
-    github: "https://github.com/username/project1",
-    technologies: ["React", "Tailwind CSS", "Node.js"],
+      "PrepIt is a mobile app that allows users to explore recipes, create a meal plan and shopping list, and get a price comparison from top UK supermarkets.",
+    github: "https://github.com/joshwant/COMP3000-JOSHWANT",
+    technologies: ["React Native", "Expo", "Node.js", "MongoDB", "Firebase"],
   },
 ];
 
