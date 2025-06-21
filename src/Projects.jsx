@@ -26,7 +26,7 @@ export default function Projects({ projects }) {
     <section className="min-h-screen py-20 bg-gray-100" id="projects">
       <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
 
-      <div className="flex flex-col md:flex-row gap-8 max-w-7xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
         {/* Project List */}
         <div className="flex flex-col gap-4 w-full md:w-1/3">
           {projects.map((project) => (
