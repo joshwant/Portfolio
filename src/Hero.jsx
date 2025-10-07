@@ -54,7 +54,7 @@ export default function Hero({ onNavClick, setShowStickyNav }) {
       <div className="absolute bottom-6 left-6 flex space-x-6">
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/josh-want"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
@@ -72,7 +72,7 @@ export default function Hero({ onNavClick, setShowStickyNav }) {
 
         {/* GitHub */}
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/joshwant"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
