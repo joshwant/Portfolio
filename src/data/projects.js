@@ -13,5 +13,15 @@ export const projectsData = [
     technologies: ["React Native", "Expo", "Node.js", "MongoDB"],
     category: "Mobile App"
   },
-  // Add more projects
+  {
+    id: "toothtrack",
+    title: "ToothTrack",
+    shortDescription: "Dental Care Mobile App to Simplify Patient Experience.",
+    mainImage: posterImage,
+    images: [posterImage, homepageImage],
+    description: "ToothTrack is a mobile app that offers convenient appointment scheduling, secure communication, easy access to dental records, order dental supplies, and more...",
+    github: "https://github.com/joshwant/...",
+    technologies: ["Flutter", "Dart", "Node.js"],
+    category: "Mobile App"
+  },
 ];
