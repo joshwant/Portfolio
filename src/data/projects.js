@@ -14,7 +14,19 @@ export const projectsData = [
     description: "PrepIt is a mobile app that allows users to explore recipes...",
     github: "https://github.com/joshwant/...",
     technologies: ["React Native", "Expo", "Node.js", "MongoDB"],
-    category: "Mobile App"
+    category: "Mobile App",
+    fullDescription: `
+### The Challenge
+Building a meal planner that syncs with real-time prices was **no easy task**. I had to ensure the data was accurate across 4 different supermarkets.
+
+### Key Features
+* **AI Recipe Scraping:** Uses NLP to extract ingredients.
+* **Price Comparison:** Real-time API integration.
+* *Note: This was built during a 48-hour hackathon.*
+
+### Technical Implementation
+I chose **MongoDB** for its schema flexibility...
+    `
   },
   {
     id: "toothtrack",
@@ -25,6 +37,18 @@ export const projectsData = [
     description: "ToothTrack is a mobile app that offers convenient appointment scheduling, secure communication, easy access to dental records, order dental supplies, and more...",
     github: "https://github.com/joshwant/...",
     technologies: ["Flutter", "Dart", "Node.js"],
-    category: "Mobile App"
+    category: "Mobile App",
+    fullDescription: `
+### The Challenge
+Building a meal planner that syncs with real-time prices was **no easy task**. I had to ensure the data was accurate across 4 different supermarkets.
+
+### Key Features
+* **AI Recipe Scraping:** Uses NLP to extract ingredients.
+* **Price Comparison:** Real-time API integration.
+* *Note: This was built during a 48-hour hackathon.*
+
+### Technical Implementation
+I chose **MongoDB** for its schema flexibility...
+    `
   },
 ];

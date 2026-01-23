@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { projectsData } from "../data/projects";
+import ReactMarkdown from 'react-markdown';
 
 export default function ProjectPage() {
   const { id } = useParams();
@@ -32,6 +33,10 @@ export default function ProjectPage() {
           className="w-full aspect-video object-cover rounded-2xl shadow-2xl mb-12" 
           alt={project.title} 
         />
+
+        <div className="prose prose-blue max-w-none text-gray-700">
+          <ReactMarkdown>{project.fullDescription}</ReactMarkdown>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2">
