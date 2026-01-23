@@ -1,6 +1,8 @@
 import posterImage from "../assets/prepit/poster.jpg";
 import homepageImage from "../assets/prepit/homepage.png";
 
+import toothtrackHomepage from "../assets/toothtrack/homepage.jpg";
+
 export const projectsData = [
   {
     id: "prepit",
@@ -18,7 +20,7 @@ export const projectsData = [
     title: "ToothTrack",
     shortDescription: "Dental Care Mobile App to Simplify Patient Experience.",
     mainImage: posterImage,
-    images: [posterImage, homepageImage],
+    images: [toothtrackHomepage, homepageImage],
     description: "ToothTrack is a mobile app that offers convenient appointment scheduling, secure communication, easy access to dental records, order dental supplies, and more...",
     github: "https://github.com/joshwant/...",
     technologies: ["Flutter", "Dart", "Node.js"],
