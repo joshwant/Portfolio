@@ -11,9 +11,9 @@ export const projectsData = [
     shortDescription: "AI-Powered Meal Planning and Price Comparison.",
     mainImage: prepitThumb,
     images: [prepitThumb, prepit1],
-    description: "PrepIt is a mobile app that allows users to explore recipes...",
-    github: "https://github.com/joshwant/...",
-    technologies: ["React Native", "Expo", "Node.js", "MongoDB"],
+    description: "PrepIt is a mobile app that allows users to explore recipes, create a meal plan and shopping list, and get a price comparison from top UK supermarkets.",
+    github: "https://github.com/joshwant/COMP3000-JOSHWANT",
+    technologies: ["React Native", "Expo", "Node.js", "MongoDB", "Firebase"],
     category: "Mobile App",
     fullDescription: `
 ### The Challenge
@@ -25,7 +25,7 @@ Building a meal planner that syncs with real-time prices was **no easy task**. I
 * *Note: This was built during a 48-hour hackathon.*
 
 ### Technical Implementation
-I chose **MongoDB** for its schema flexibility...
+I chose **MongoDB** for its schema flexibility, which allowed me to store varying ingredient formats from different supermarket APIs without rigid migrations.
     `
   },
   {
@@ -40,15 +40,15 @@ I chose **MongoDB** for its schema flexibility...
     category: "Mobile App",
     fullDescription: `
 ### The Challenge
-Building a meal planner that syncs with real-time prices was **no easy task**. I had to ensure the data was accurate across 4 different supermarkets.
+The dental industry often relies on outdated paper systems. The goal was to create a centralized mobile hub for both patients and clinics to manage the entire lifecycle of an appointment.
 
 ### Key Features
-* **AI Recipe Scraping:** Uses NLP to extract ingredients.
-* **Price Comparison:** Real-time API integration.
-* *Note: This was built during a 48-hour hackathon.*
+* **Smart Scheduling:** Prevents double-booking and sends automated push notifications.
+* **Supply Management:** Integrated store for ordering dental hygiene products.
+* **Secure Records:** Encrypted storage for patient x-rays and history.
 
 ### Technical Implementation
-I chose **MongoDB** for its schema flexibility...
+Using **Flutter** allowed for a highly responsive UI that looks native on both iOS and Android, while the **Node.js** backend handled the heavy lifting for scheduling logic.
     `
   },
 ];

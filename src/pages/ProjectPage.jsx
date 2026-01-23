@@ -10,17 +10,25 @@ export default function ProjectPage() {
 
   return (
     <div className="min-h-screen bg-white pb-20">
-      {/* Simple Back Nav */}
-      <nav className="p-6">
-        <Link to="/" className="text-blue-600 font-medium">← Back to Portfolio</Link>
+      {/* Navigation */}
+      <nav className="p-6 max-w-7xl mx-auto">
+        <Link to="/" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+          ← Back to Projects
+        </Link>
       </nav>
 
       <div className="max-w-5xl mx-auto px-6">
+        {/* Header */}
         <header className="mb-10">
-          <h1 className="text-5xl font-extrabold mb-4">{project.title}</h1>
-          <div className="flex flex-wrap gap-3">
+          <p className="text-blue-600 font-bold uppercase tracking-widest text-sm mb-2">
+            {project.category}
+          </p>
+          <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6">
+            {project.title}
+          </h1>
+          <div className="flex flex-wrap gap-2">
             {project.technologies.map(t => (
-              <span key={t} className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
+              <span key={t} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">
                 {t}
               </span>
             ))}
@@ -30,29 +38,35 @@ export default function ProjectPage() {
         {/* Hero Image */}
         <img 
           src={project.mainImage} 
-          className="w-full aspect-video object-cover rounded-2xl shadow-2xl mb-12" 
+          className="w-full aspect-video object-cover rounded-3xl shadow-2xl mb-16" 
           alt={project.title} 
         />
 
-        <div className="prose prose-blue max-w-none text-gray-700">
-          <ReactMarkdown>{project.fullDescription}</ReactMarkdown>
-        </div>
-
+        {/* Main Content Grid */}
         <div className="grid md:grid-cols-3 gap-12">
+          
+          {/* Left Side: The Case Study (Markdown) */}
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-bold mb-4">About the Project</h2>
-            <p className="text-gray-700 leading-relaxed text-lg">{project.description}</p>
+            <section className="prose prose-slate prose-lg max-w-none">
+              <ReactMarkdown>{project.fullDescription}</ReactMarkdown>
+            </section>
           </div>
           
-          <div className="space-y-6">
-            <a 
-              href={project.github} 
-              target="_blank" 
-              className="block w-full text-center py-4 bg-gray-900 text-white rounded-xl font-bold hover:bg-black transition-all"
-            >
-              View Source Code
-            </a>
+          {/* Right Side: Quick Info / Links */}
+          <div className="space-y-8">
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-4">Project Links</h3>
+              <a 
+                href={project.github} 
+                target="_blank" 
+                rel="noreferrer"
+                className="flex items-center justify-center gap-2 w-full py-4 bg-gray-900 text-white rounded-xl font-bold hover:bg-black transition-all shadow-lg hover:shadow-xl active:scale-95"
+              >
+                View on GitHub
+              </a>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
