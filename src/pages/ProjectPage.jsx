@@ -12,7 +12,7 @@ export default function ProjectPage() {
     <div className="min-h-screen bg-white pb-20">
       {/* Navigation */}
       <nav className="p-6 max-w-7xl mx-auto">
-        <Link to="/" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+        <Link to="/#projects" className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
           ← Back to Projects
         </Link>
       </nav>

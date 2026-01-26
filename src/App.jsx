@@ -17,6 +17,20 @@ export default function App() {
   const sectionIds = ["home", "projects", "work", "contact"];
 
     useEffect(() => {
+      const hash = window.location.hash;
+      if (hash) {
+        const targetId = hash.replace("#", "");
+        const element = document.getElementById(targetId);
+        if (element) {
+          // Small timeout to allow the DOM to fully load before scrolling
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: "smooth" });
+          }, 100);
+        }
+      }
+    }, []);
+
+    useEffect(() => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
@@ -49,11 +63,14 @@ export default function App() {
 
     refs[section]?.current?.scrollIntoView({ behavior: "smooth" });
 
+    window.history.pushState(null, null, `#${section}`);
+
     setActiveSection(section);
   };
 
 return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={
           <div className="font-sans text-gray-800">
