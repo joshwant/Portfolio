@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import StickyNav from "./StickyNav";
 import Projects from "./Projects";
 import ProjectPage from "./pages/ProjectPage";
+import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
   const homeRef = useRef(null);
