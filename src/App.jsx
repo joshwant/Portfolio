@@ -9,13 +9,13 @@ import ScrollToTop from "./ScrollToTop";
 export default function App() {
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
-  const workRef = useRef(null);
+  const aboutRef = useRef(null);
   const contactRef = useRef(null);
 
   const [showStickyNav, setShowStickyNav] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
-  const sectionIds = ["home", "projects", "work", "contact"];
+  const sectionIds = ["home", "projects", "about", "contact"];
 
     useEffect(() => {
     const observerOptions = {
@@ -44,7 +44,7 @@ export default function App() {
     const refs = {
       home: homeRef,
       projects: projectsRef,
-      work: workRef,
+      about: aboutRef,
       contact: contactRef,
     };
 
@@ -71,8 +71,8 @@ return (
               <Projects /> 
             </section>
 
-            <section id="work" ref={workRef} className="h-screen bg-gray-200 flex justify-center items-center">
-              <h2 className="text-3xl font-bold">Work Experience</h2>
+            <section id="about" ref={aboutRef} className="h-screen bg-gray-200 flex justify-center items-center">
+              <h2 className="text-3xl font-bold">About</h2>
             </section>
 
             <section id="contact" ref={contactRef} className="h-screen bg-gray-300 flex justify-center items-center">

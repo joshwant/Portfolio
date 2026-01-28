@@ -34,7 +34,7 @@ export default function Hero({ onNavClick, setShowStickyNav }) {
 
       {/* Navigation Buttons */}
       <div ref={heroNavRef} className="flex space-x-6">
-        {["home", "projects", "work", "contact"].map((section) => (
+        {["home", "projects", "about", "contact"].map((section) => (
           <button
             key={section}
             onClick={() => onNavClick(section)}

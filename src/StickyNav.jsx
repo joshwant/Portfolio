@@ -7,7 +7,7 @@ export default function StickyNav({ onNavClick, visible, activeSection }) {
         ${visible ? "opacity-100" : "opacity-0 pointer-events-none"}`}
     >
       <div className="bg-white/80 backdrop-blur-md shadow-lg rounded-full px-4 py-2 flex space-x-3">
-        {["home", "projects", "work", "contact"].map((section) => (
+        {["home", "projects", "about", "contact"].map((section) => (
           <button
             key={section}
             onClick={() => onNavClick(section)}
