@@ -8,7 +8,7 @@ export default function Projects() {
         {/* Header Section */}
         <div className="mb-16 text-center md:text-left">
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 tracking-tight">
-            About
+            Projects
           </h2>
           <div className="h-1.5 w-24 bg-blue-600 mt-4 rounded-full mx-auto md:mx-0"></div>
           <p className="mt-6 text-gray-600 max-w-2xl text-lg">
